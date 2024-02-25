@@ -1,0 +1,427 @@
+@font-face {
+    font-family: "newFont";
+    src: url("./assets/JosefinSans-VariableFont_wght.ttf") format("woff2");
+  }
+  
+  html {
+    font-size: 16px;
+    height: 100vh;
+  }
+  
+  body {
+    height: 100%;
+    font-family: "newFont", sans-serif;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    min-height: 6.5em;
+    background-color: burlywood;
+  }
+  
+  .titol {
+    text-align: center;
+    font-size: 1.875em;
+    color: white;
+    margin-right: auto;
+    margin-left: 5em; 
+  }
+  
+  .headerLink {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 10.9375em; 
+    height: 3.5em;
+    font-size: 1.25em; 
+    color: white;
+    text-decoration: none;
+    margin-inline: 0.9375em; 
+    font-weight: 700;
+    transition: background-color 0.5s;
+    border-radius: 5px;
+  }
+  
+  .headerLink:hover {
+    background-color:rgb(219, 173, 112);
+  }
+  
+  .primeraSeccio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: top; 
+  }
+  
+  .introTitol1 {
+    margin: auto; 
+    height: auto;
+    font-size: 2.5em; 
+    color: #ffffff;
+  }
+  
+  .introTitol2 {
+    margin: 0.3125em; 
+    height: auto;
+    font-size: 1em; 
+    color: #ffffff;
+  }
+  
+  .presentacio {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 5em; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+    height: fit-content;
+    width:fit-content;
+    padding: 1.25em; 
+    border-radius: 2px;
+    color: antiquewhite;
+    background-color: rgba(222, 184, 135, 0.903);
+  }
+  
+  .fotoBarra {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .segonaSeccio {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .segonaSeccio2 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .t{
+    font-size: 3em;
+  }
+
+  .containerRow{
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+  }
+
+  .cntImg{
+    float: left;
+    width: 30%;
+  }
+
+  .cntText{
+    width: 50%;
+    float: right;
+  }
+
+  .cntImg1{
+    float: right;
+    width: 30%;
+  }
+
+  .cntText1{
+    width: 50%;
+    float: left;
+  }
+
+  .imgg{
+    width: 100%;
+  }
+
+  .ttl{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(222, 184, 135, 0.903);
+    color: white;
+  }
+
+  .grid {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 20% 38% 38%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 1em;
+    grid-template-areas:
+      "main header header"
+      "main ft1 ft2"
+      "main2 header2 header2"
+      "main2 ft3 ft4";
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: solid 2px rgba(222, 184, 135, 0.903);
+    width: 100%;
+    height: 100%; 
+    grid-area: main;
+  }
+  
+  .infoMenu {
+    width: 100%; 
+    height: 100%; 
+    grid-area: header;
+  }
+  
+  .ft1 {
+    width: 100%; 
+    height: 100%; 
+    grid-area: ft1;
+  }
+  
+  .ft2 {
+    width: 100%; 
+    height: 100%; 
+    grid-area: ft2;
+  }
+
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: solid 2px rgba(222, 184, 135, 0.903);
+    width: 100%;
+    height: 100%; 
+    grid-area: main2;
+  }
+  
+  .infoMenu1 {
+    width: 100%;
+    height: 100%;
+    grid-area: header2;
+  }
+  
+  .ft11 {
+    width: 100%; 
+    height: 100%;
+    grid-area: ft3;
+  }
+  
+  .ft21 {
+    width: 100%; 
+    height: 100%;
+    grid-area: ft4; 
+  }
+
+  .terceraSeccio{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .galeria{
+    margin-left: auto;
+    margin-right: auto;   
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 50% 50%;
+    gap: 1em;
+    grid-template-areas:  
+      "p1 p2 p3 p4"
+      "p5 p6 p7 p8"
+
+  }
+
+  .titolGaleria{
+    color: black;
+    grid-area: ttl;
+  }
+  .ftt1{
+    width: 100%;
+    height: 100%;
+    grid-area: p1;
+    filter: brightness(50%);
+  }
+  .ftt2{
+    width: 100%;
+    height: 100%;
+    grid-area: p2;
+  }
+  .ftt3{
+    width: 100%;
+    height: 100%;
+    grid-area: p3;
+  }
+  .ftt4{
+    width: 100%;
+    height: 100%;
+    grid-area: p4;
+    filter: brightness(50%);
+  }
+  .ftt5{
+    width: 100%;
+    height: 100%;
+    grid-area: p5;
+    filter: brightness(50%);
+  }
+  .ftt6{
+    width: 100%;
+    height: 100%;
+    grid-area: p6;
+  }
+  .ftt7{
+    width: 100%;
+    height: 100%;
+    grid-area: p7;
+  }
+  .ftt8{
+    width: 100%;
+    height: 100%;
+    grid-area: p8;
+    filter: brightness(50%);
+  }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    margin-top: 2em;
+    justify-content: space-around;
+    margin-bottom: 0%;
+    background-color: rgba(222, 184, 135, 0.903);;
+  }
+
+  .imgIcon{
+    width: 1.5em;
+    height: auto;
+  }
+  
+  @media only screen and (max-width: 1025px) {
+
+    .grid {
+      margin-top: 20px;
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: 25% 70%;
+      grid-template-rows: 15% 15% 15% 15% 15% 15%;
+      gap: 1em;
+      grid-template-areas:
+        "main header "
+        "main ft1"
+        "main ft2"
+        "main2 header2 "
+        "main2 ft3"
+        "main2 ft4"
+    }
+
+    .primeraSeccio{
+      height: 50vh;
+    }
+
+    .titol {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-top: 0.9375em; 
+      margin-bottom: 0.3125em; 
+    }
+  
+    .fotoBarra {
+      width: 100%;
+    }
+  
+    .header {
+      flex-direction: column;
+    }
+  
+    .presentacio {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .cntImg{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .cntImg1{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+  
+    .cntText{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .cntText1{
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+    }
+
+    .containerRow{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .t{
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
