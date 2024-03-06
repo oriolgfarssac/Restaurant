@@ -255,6 +255,8 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -341,7 +343,46 @@
   }
   
   @media only screen and (max-width: 1025px) {
-
+    .header {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      top: 0;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      min-height: 6.5em;
+      background-color: burlywood;
+    }
+    
+    .titol {
+      font-size: 1.5em;
+      width: fit-content;
+      color: white;
+      margin: 0px;
+    }
+    
+    .headerLink {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 8em; 
+      height: 2.5em;
+      font-size: 0.75em; 
+      color: white;
+      text-decoration: none;
+      margin-inline: 0.9375em; 
+      font-weight: 700;
+      transition: background-color 0.5s;
+      border-radius: 5px;
+    }
+    
+    .headerLink:hover {
+      background-color:rgb(219, 173, 112);
+    }
     .grid {
       margin-top: 20px;
       width: 100%;
@@ -419,9 +460,81 @@
       align-items: center;
     }
 
+    .segonaSeccio{
+      margin-top: 6em;
+    }
+
     .t{
       text-align: center;
       margin-top: 20px;
     }
   }
   
+  @media only screen and (max-width: 470px){
+    .galeria{
+      width: 90%;
+    }
+    .imgIcon{
+      width: 0.75em;
+      height: auto;
+    }
+    .correu{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+    }
+    .telefon{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+      height: auto;
+      min-height: 6.5em;
+      background-color: burlywood;
+    }
+    
+    .titol {
+      display: flex;
+      flex-direction: row ;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 1.875em;
+      color: white;
+      margin-right: auto; 
+    }
+    
+    .headerLink {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      width: 10em; 
+      height: 2.5em;
+      font-size: 0.75em; 
+      color: white;
+      text-decoration: none;
+      margin-inline: 0.9375em; 
+      font-weight: 700;
+      transition: background-color 0.5s;
+      border-radius: 5px;
+    }
+    
+    .headerLink:hover {
+      background-color:rgb(219, 173, 112);
+    }
+  }
