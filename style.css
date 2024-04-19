@@ -2,6 +2,15 @@
     font-family: "newFont";
     src: url("./assets/JosefinSans-VariableFont_wght.ttf") format("woff2");
   }
+
+  @keyframes blurry {
+    from{
+      color: rgba(255, 255, 255, 0);
+    }
+    to{
+      color: white;
+    }
+  }
   
   html {
     font-size: 16px;
@@ -36,8 +45,25 @@
     font-size: 1.875em;
     color: white;
     margin-right: auto;
-    margin-left: 5em; 
+    margin-left: 5em;
+    animation: blurry;
+    animation-duration: 3s;
   }
+
+  .titol span{
+    font-size: 30px;
+    transition: color 0.5s, font-size 0.5s, transform 0.5s;
+    display: inline-block;
+  }
+  
+  .titol span:hover{
+    font-size: 40px;
+    color: aqua;
+    transform: rotate(360deg);
+    transform-origin: center; 
+  }
+
+  
   
   .headerLink {
     display: flex;
@@ -73,6 +99,21 @@
     height: auto;
     font-size: 2.5em; 
     color: #ffffff;
+    animation: blurry;
+    animation-duration: 3s;
+  }
+
+  .introTitol1 span{
+    font-size: 40px;
+    transition: color 0.5s, font-size 0.5s, transform 0.2s;
+    display: inline-block;
+  }
+
+  .introTitol1 span:hover{
+    transform: rotate(360deg);
+    transform-origin: center;
+    font-size: 50px; 
+    color: aqua;
   }
   
   .introTitol2 {
@@ -80,6 +121,8 @@
     height: auto;
     font-size: 1em; 
     color: #ffffff;
+    animation: blurry;
+    animation-duration: 3s;
   }
   
   .presentacio {
@@ -271,16 +314,18 @@
     grid-template-columns: 24% 24% 24% 24%;
     grid-template-rows: 50% 50%;
     gap: 1em;
+    overflow: hidden;
     grid-template-areas:  
       "p1 p2 p3 p4"
       "p5 p6 p7 p8"
-
+;
   }
 
   .titolGaleria{
     color: black;
     grid-area: ttl;
   }
+
   .ftt1{
     width: 100%;
     height: 100%;
@@ -341,6 +386,19 @@
     width: 1.5em;
     height: auto;
   }
+
+  .cont{
+    overflow: hidden;
+  }
+
+  #pic{
+    transition: transform 0.5s, filter 0.5s;
+  }
+
+  #pic:hover{
+    transform: rotate(-20deg) scale(1.5);
+    filter: grayscale(60%);
+  }
   
   @media only screen and (max-width: 1025px) {
     .header {
@@ -361,6 +419,13 @@
       width: fit-content;
       color: white;
       margin: 0px;
+      transition: font-size 0.5s, color 0.5s, transform 0.5s;
+    }
+
+    .titol span:hover{
+      font-size: 2em;
+      color: aqua;
+      transform: rotate(15deg);
     }
     
     .headerLink {
