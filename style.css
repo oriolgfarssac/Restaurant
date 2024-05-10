@@ -27,6 +27,7 @@
   }
   
   .header {
+    z-index: 100;
     position: fixed;
     top: 0;
     display: flex;
@@ -315,6 +316,7 @@
     grid-template-rows: 50% 50%;
     gap: 1em;
     overflow: hidden;
+    z-index: -100;
     grid-template-areas:  
       "p1 p2 p3 p4"
       "p5 p6 p7 p8"
@@ -398,6 +400,52 @@
   #pic:hover{
     transform: rotate(-20deg) scale(1.5);
     filter: grayscale(60%);
+  }
+
+  .video{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 80%;
+    height: auto;
+    z-index: -100;
+  }
+
+  .navVideo{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.406);
+    z-index: 1;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .videoButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+  }
+
+  .videoR{
+    margin-top: none;
+    z-index: -1;
+    width: 100%;
+    height: auto;
   }
   
   @media only screen and (max-width: 1025px) {
